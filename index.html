@@ -19,7 +19,7 @@
 
       
 </head>
-<body class="min-h-screen p-6 bg-[#F8FAFC]">
+<body class="min-h-screen p-6 bg-[#F8FAFC] geist-fonts">
     <section class="max-w-6xl mx-auto space-y-5">
 
         <h2 class="text-3xl font-bold text-[#002C5C] mb-8">Job Application Tracker</h2>
@@ -42,7 +42,7 @@
         <!-- Available Jobs -->
         <div class="flex justify-between mt-8 mb-5">
             <h3 class="text-[#323B49] text-2xl font-bold">Available Jobs</h3>
-            <p id="jobStatusText" class="text-[#64748B] font-medium">8 jobs</p>
+            <p id="jobStatusRight" class="text-[#64748B] font-medium">8 jobs</p>
         </div>
 
 
@@ -62,7 +62,7 @@
         <!-- card section -->
 
         <!-- card 1 -->
-        <div class="job-card bg-[#FFFFFF] border border-gray-100 p-5 space-y-3" data-status="not-applied">
+        <div class="job-card bg-[#FFFFFF] border border-gray-100 p-5 space-y-3 rounded-xl" data-status="not-applied">
             <div class="flex justify-between items-center">
                 <div class="">
                     <h2 class="text-[#002C5C] font-bold text-xl">Mobile First Corp</h2>
@@ -71,21 +71,23 @@
                 </div>
                 
                 <div class="text-[#64748B]">
-                    <i class="fa-regular fa-trash-can"></i>
+                    <i class="delete-btn fa-regular fa-trash-can"></i>
                 </div>
                 
                 
             </div>
             <p class="text-[#64748B]">Remote • Full-time • $130,000 - $175,000 </p>
-                <button class="text-[#002C5C] bg-[#002C5C]/10 px-4 py-1 rounded-md font-medium text-[14px]">NOT APPLIED</button>
+                <button class="status-badge text-[#002C5C] bg-[#002C5C]/10 px-4 py-1 rounded-md font-medium text-[14px] hidden">NOT APPLIED</button>
                 <p class="text-[#323B49]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
-                <button class="geist-fonts text-[#10B981] border rounded-md px-5 py-2 font-semibold text-[14px] ">INTERVIEW</button>
-                <button class="geist-fonts text-[#EF4444] border rounded-md px-5 py-2 font-semibold text-[14px] ">REJECTED</button>
+                <button class="interview-btn geist-fonts text-[#10B981] border rounded-md px-5 py-2 font-semibold text-[14px] cursor-pointer ">INTERVIEW</button>
+                <button class="reject-btn geist-fonts text-[#EF4444] border rounded-md px-5 py-2 font-semibold text-[14px] cursor-pointer  ">REJECTED
+
+                </button>
         </div>
 
         <!-- card 2 -->
 
-        <div class="job-card bg-[#FFFFFF] border border-gray-100 p-5 space-y-3" data-status="not-applied">
+        <div class="job-card bg-[#FFFFFF] border border-gray-100 p-5 space-y-3 rounded-xl" data-status="not-applied">
             <div class="flex justify-between items-center">
                 <div class="">
                     <h2 class="text-[#002C5C] font-bold text-xl">WebFlow Agency</h2>
@@ -94,22 +96,22 @@
                 </div>
                 
                 <div class="text-[#64748B]">
-                    <i class="fa-regular fa-trash-can"></i>
+                    <i class="delete-btn fa-regular fa-trash-can"></i>
                 </div>
                 
                 
             </div>
             <p class="text-[#64748B]">Los Angeles, CA • 
                 Part-time • $80,000 - $120,000</p>
-                <button class="text-[#002C5C] bg-[#002C5C]/10 px-4 py-1 rounded-md font-medium text-[14px]">NOT APPLIED</button>
+                <button class="status-badge text-[#002C5C] bg-[#002C5C]/10 px-4 py-1 rounded-md font-medium text-[14px]">NOT APPLIED</button>
                 <p class="text-[#323B49]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
-                <button class="geist-fonts text-[#10B981] border rounded-md px-5 py-2 font-semibold text-[14px] ">INTERVIEW</button>
-                <button class="geist-fonts text-[#EF4444] border rounded-md px-5 py-2 font-semibold text-[14px] ">REJECTED</button>
+                <button class="interview-btn geist-fonts text-[#10B981] border rounded-md px-5 py-2 font-semibold text-[14px] cursor-pointer  ">INTERVIEW</button>
+                <button class=" reject-btn geist-fonts text-[#EF4444] border rounded-md px-5 py-2 font-semibold text-[14px] cursor-pointer  ">REJECTED</button>
         </div>
 
         <!-- card 3 -->
 
-        <div class="job-card bg-[#FFFFFF] border border-gray-100 p-5 space-y-3" data-status="not-applied">
+        <div class="job-card bg-[#FFFFFF] border border-gray-100 p-5 space-y-3 rounded-xl" data-status="not-applied">
             <div class="flex justify-between items-center">
                 <div class="">
                     <h2 class="text-[#002C5C] font-bold text-xl">DataViz Solutions</h2>
@@ -118,47 +120,47 @@
                 </div>
                 
                 <div class="text-[#64748B]">
-                    <i class="fa-regular fa-trash-can"></i>
+                    <i class="delete-btn fa-regular fa-trash-can"></i>
                 </div>
                 
                 
             </div>
             <p class="text-[#64748B]">Boston, MA  • Full-time • $125
             000 - $165,000</p>
-                <button class="text-[#002C5C] bg-[#002C5C]/10 px-4 py-1 rounded-md font-medium text-[14px]">NOT APPLIED</button>
+                <button class="status-badge text-[#002C5C] bg-[#002C5C]/10 px-4 py-1 rounded-md font-medium text-[14px]">NOT APPLIED</button>
                 <p class="text-[#323B49]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
-                <button class="geist-fonts text-[#10B981] border rounded-md px-5 py-2 font-semibold text-[14px] ">INTERVIEW</button>
-                <button class="geist-fonts text-[#EF4444] border rounded-md px-5 py-2 font-semibold text-[14px] ">REJECTED</button>
+                <button class="interview-btn geist-fonts text-[#10B981] border rounded-md px-5 py-2 font-semibold text-[14px] cursor-pointer ">INTERVIEW</button>
+                <button class="reject-btn geist-fonts text-[#EF4444] border rounded-md px-5 py-2 font-semibold text-[14px] cursor-pointer ">REJECTED</button>
         </div>
 
 
         <!-- card 4 -->
 
-        <div class="job-card bg-[#FFFFFF] border border-gray-100 p-5 space-y-3" data-status="not-applied">
+        <div class="job-card bg-[#FFFFFF] border border-gray-100 p-5 space-y-3 rounded-xl" data-status="not-applied">
             <div class="flex justify-between items-center">
                 <div class="">
-                    <h2 class="text-[#002C5C] font-bold text-xl">CloudFirst Inc</h2>
+                    <h2 class=" text-[#002C5C] font-bold text-xl">CloudFirst Inc</h2>
                     <p class="text-[#64748B]">Backend Developer</p>
 
                 </div>
                 
                 <div class="text-[#64748B]">
-                    <i class="fa-regular fa-trash-can"></i>
+                    <i class="delete-btn fa-regular fa-trash-can"></i>
                 </div>
                 
                 
             </div>
             <p class="text-[#64748B]">Seattle, WA •  Full-tim • $140,000  - $190,00</p>
-                <button class="text-[#002C5C] bg-[#002C5C]/10 px-4 py-1 rounded-md font-medium text-[14px]">NOT APPLIED</button>
+                <button class="status-badge text-[#002C5C] bg-[#002C5C]/10 px-4 py-1 rounded-md font-medium text-[14px]">NOT APPLIED</button>
                 <p class="text-[#323B49]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
-                <button class="geist-fonts text-[#10B981] border rounded-md px-5 py-2 font-semibold text-[14px] ">INTERVIEW</button>
-                <button class="geist-fonts text-[#EF4444] border rounded-md px-5 py-2 font-semibold text-[14px] ">REJECTED</button>
+                <button class="interview-btn geist-fonts text-[#10B981] border rounded-md px-5 py-2 font-semibold text-[14px] cursor-pointer  ">INTERVIEW</button>
+                <button class="reject-btn geist-fonts text-[#EF4444] border rounded-md px-5 py-2 font-semibold text-[14px] cursor-pointer ">REJECTED</button>
         </div>
 
 
         <!-- card 5 -->
 
-        <div class="job-card bg-[#FFFFFF] border border-gray-100 p-5 space-y-3" data-status="not-applied">
+        <div class="job-card bg-[#FFFFFF] border border-gray-100 p-5 space-y-3 rounded-xl" data-status="not-applied">
             <div class="flex justify-between items-center">
                 <div class="">
                     <h2 class="text-[#002C5C] font-bold text-xl">Innovation Labs</h2>
@@ -167,21 +169,21 @@
                 </div>
                 
                 <div class="text-[#64748B]">
-                    <i class="fa-regular fa-trash-can"></i>
+                    <i class="delete-btn fa-regular fa-trash-can"></i>
                 </div>
                 
                 
             </div>
             <p class="text-[#64748B]">Austin, TX • Full-time •  $110,000 -  $150,000 </p>
-                <button class="text-[#002C5C] bg-[#002C5C]/10 px-4 py-1 rounded-md font-medium text-[14px]">NOT APPLIED</button>
+                <button class=" status-badge text-[#002C5C] bg-[#002C5C]/10 px-4 py-1 rounded-md font-medium text-[14px]">NOT APPLIED</button>
                 <p class="text-[#323B49]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
-                <button class="geist-fonts text-[#10B981] border rounded-md px-5 py-2 font-semibold text-[14px] ">INTERVIEW</button>
-                <button class="geist-fonts text-[#EF4444] border rounded-md px-5 py-2 font-semibold text-[14px] ">REJECTED</button>
+                <button class="interview-btn geist-fonts text-[#10B981] border rounded-md px-5 py-2 font-semibold text-[14px] cursor-pointer  ">INTERVIEW</button>
+                <button class="reject-btn geist-fonts text-[#EF4444] border rounded-md px-5 py-2 font-semibold text-[14px] cursor-pointer  ">REJECTED</button>
         </div>
 
         <!-- card 6 -->
 
-        <div class="job-card bg-[#FFFFFF] border border-gray-100 p-5 space-y-3" data-status="not-applied">
+        <div class="job-card bg-[#FFFFFF] border border-gray-100 p-5 space-y-3 rounded-xl" data-status="not-applied">
             <div class="flex justify-between items-center">
                 <div class="">
                     <h2 class="text-[#002C5C] font-bold text-xl">MegaCorp Solutions</h2>
@@ -190,21 +192,21 @@
                 </div>
                 
                 <div class="text-[#64748B]">
-                    <i class="fa-regular fa-trash-can"></i>
+                    <i class="delete-btn fa-regular fa-trash-can"></i>
                 </div>
                 
                 
             </div>
             <p class="text-[#64748B]">New York, NY • Full - time • $130,000 - $170,00</p>
-                <button class="text-[#002C5C] bg-[#002C5C]/10 px-4 py-1 rounded-md font-medium text-[14px]">NOT APPLIED</button>
+                <button class="status-badge text-[#002C5C] bg-[#002C5C]/10 px-4 py-1 rounded-md font-medium text-[14px]">NOT APPLIED</button>
                 <p class="text-[#323B49]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
-                <button class="geist-fonts text-[#10B981] border rounded-md px-5 py-2 font-semibold text-[14px] ">INTERVIEW</button>
-                <button class="geist-fonts text-[#EF4444] border rounded-md px-5 py-2 font-semibold text-[14px] ">REJECTED</button>
+                <button class="interview-btn geist-fonts text-[#10B981] border rounded-md px-5 py-2 font-semibold text-[14px] cursor-pointer  ">INTERVIEW</button>
+                <button class="reject-btn geist-fonts text-[#EF4444] border rounded-md px-5 py-2 font-semibold text-[14px] cursor-pointer ">REJECTED</button>
         </div>
 
         <!-- card 7 -->
 
-        <div class="job-card bg-[#FFFFFF] border border-gray-100 p-5 space-y-3" data-status="not-applied">
+        <div class="job-card bg-[#FFFFFF] border border-gray-100 p-5 space-y-3 rounded-xl" data-status="not-applied">
             <div class="flex justify-between items-center">
                 <div class="">
                     <h2 class="text-[#002C5C] font-bold text-xl">StartupXYZ</h2>
@@ -213,22 +215,22 @@
                 </div>
                 
                 <div class="text-[#64748B]">
-                    <i class="fa-regular fa-trash-can"></i>
+                    <i class="delete-btn fa-regular fa-trash-can"></i>
                 </div>
                 
                 
             </div>
             <p class="text-[#64748B]">Remote • Full-time • $120,000 - $160,000</p>
-                <button class="text-[#002C5C] bg-[#002C5C]/10 px-4 py-1 rounded-md font-medium text-[14px]">NOT APPLIED</button>
+                <button class="status-badge text-[#002C5C] bg-[#002C5C]/10 px-4 py-1 rounded-md font-medium text-[14px]">NOT APPLIED</button>
                 <p class="text-[#323B49]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
-                <button class="geist-fonts text-[#10B981] border rounded-md px-5 py-2 font-semibold text-[14px] ">INTERVIEW</button>
-                <button class="geist-fonts text-[#EF4444] border rounded-md px-5 py-2 font-semibold text-[14px] ">REJECTED</button>
+                <button class="interview-btn geist-fonts text-[#10B981] border rounded-md px-5 py-2 font-semibold text-[14px] cursor-pointer  ">INTERVIEW</button>
+                <button class="reject-btn geist-fonts text-[#EF4444] border rounded-md px-5 py-2 font-semibold text-[14px] cursor-pointer  ">REJECTED</button>
         </div>
 
         <!-- card 8 -->
 
 
-        <div class="job-card bg-[#FFFFFF] border border-gray-100 p-5 space-y-3" data-status="not-applied">
+        <div class="job-card bg-[#FFFFFF] border border-gray-100 p-5 space-y-3 rounded-xl" data-status="not-applied">
             <div class="flex justify-between items-center">
                 <div class="">
                     <h2 class="text-[#002C5C] font-bold text-xl">TechCorp Industries</h2>
@@ -237,21 +239,21 @@
                 </div>
                 
                 <div class="text-[#64748B]">
-                    <i class="fa-regular fa-trash-can"></i>
+                    <i class="delete-btn fa-regular fa-trash-can"></i>
                 </div>
                 
                 
             </div>
             <p class="text-[#64748B]">San Francisco, CA • Full-time • $130,000 - $175,000</p>
-                <button class="text-[#002C5C] bg-[#002C5C]/10 px-4 py-1 rounded-md font-medium text-[14px]">NOT APPLIED</button>
+                <button class="status-badge text-[#002C5C] bg-[#002C5C]/10 px-4 py-1 rounded-md font-medium text-[14px]">NOT APPLIED</button>
                 <p class="text-[#323B49]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
-                <button class="geist-fonts text-[#10B981] border rounded-md px-5 py-2 font-semibold text-[14px] ">INTERVIEW</button>
-                <button class="geist-fonts text-[#EF4444] border rounded-md px-5 py-2 font-semibold text-[14px] ">REJECTED</button>
+                <button class="interview-btn geist-fonts text-[#10B981] border rounded-md px-5 py-2 font-semibold text-[14px] cursor-pointer  ">INTERVIEW</button>
+                <button class="reject-btn geist-fonts text-[#EF4444] border rounded-md px-5 py-2 font-semibold text-[14px] cursor-pointer ">REJECTED</button>
         </div>
         
         
         
-        <div id="emptyMessage" class="hidden bg-[#FFFFFF] text-center py-20">
+        <div id="emptyMessage" class="hidden bg-[#FFFFFF] text-center py-20 rounded-xl">
             <div class="flex justify-center">
                 <img src="./jobs.png" alt="">
             </div>
