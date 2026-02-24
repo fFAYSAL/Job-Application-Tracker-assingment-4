@@ -2,3 +2,7 @@
     font-family: "Geist", sans-serif;
 
 }
+
+.active-btn {
+    @apply bg-blue-500 text-white;
+}
