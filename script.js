@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Rejected button
 
-    rejectBtn.addEventListener("click", () => {
+    rejectBtn.addEventListener ("click", () => {
       card.dataset.status = "rejected";
       badge.innerText = "REJECTED";
       badge.className = "px-4 py-1 rounded-md font-medium text-[14px] bg-red-100 text-red-600";
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // Delete button
 
-    deleteIcon.addEventListener("click", 
+    deleteIcon.addEventListener ("click", 
         () => {
       card.remove()
 
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
     else emptyMessage.classList.add("hidden")
   }
 
-  // right-side job status
+  // right side job status
 
   function updateJobStatus() {
     const allCards =  document.querySelectorAll(".job-card");
